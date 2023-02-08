@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Dreams",
+    "slug": "dreams-and-visions",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "evolving-technologies",
+            "project": "dreamers_dev",
+            "authToken": "3cb3ecc4a55242bbb51dd191c9f995eee36ad61e01e044719b957e2af0edbe25"
+          }
+        }
+      ]
+    },
+    "splash": {
+      "image": "./src/assets/splashPage.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "731398ce-a2c5-4057-99cc-02b180393c8e"
+      }
+    },
+    "owner": "agentgg",
+    "android": {
+      "package": "com.agentgg.dreamsandvisions"
+    },
+    "ios": {
+      "bundleIdentifier": "com.agentgg.dreamsandvisions"
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/731398ce-a2c5-4057-99cc-02b180393c8e"
+    }
+  }
+}
